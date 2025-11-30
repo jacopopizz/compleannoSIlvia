@@ -1,0 +1,76 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="it">   
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Buon compleanno Silvia — 17 anni</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+</head>
+<body>
+    <div class="page">
+        <header class="hero" role="banner" aria-label="Buon compleanno Silvia">
+            <div class="hero-inner">
+                <h1 class="name">Silvia</h1>
+                <div class="celebration-date" aria-hidden="true">01/12/2025</div>
+                <p class="lead">Buon 17° compleanno, amore mio — questo giorno è tutto per te</p>
+                <div class="controls">
+                    <button id="surpriseBtn" class="btn primary">Apri la sorpresa</button>
+                    <a href="#gallery" class="btn ghost">Vedi ricordi</a>
+                </div>
+            </div>
+            <div class="hero-decor" aria-hidden="true"></div>
+        </header>
+
+        <main class="container" id="main" role="main">
+            <section class="card birthday-message" aria-labelledby="msg-title">
+                <h2 id="msg-title">Per te, Silvia</h2>
+                <p>Oggi festeggiamo te — la tua gentilezza, il tuo sorriso e tutto ciò che rendi speciale. Grazie per essere nella mia vita.</p>
+            </section>
+
+            <section id="gallery" class="card gallery" aria-labelledby="gallery-title">
+                <h2 id="gallery-title">Ricordi insieme</h2>
+                <h4>Schiaccia su ogni foto</h4>
+                <div class="grid">
+                    <img src="assets/prima uscita.jpg" alt="Foto ricordo 1" loading="lazy">
+                    <img src="assets/tutto il giorno insieme.jpg" alt="Foto ricordo 2" loading="lazy">
+                    <img src="assets/regali per jacopo.jpg" alt="Foto ricordo 3" loading="lazy">
+                    <img src="assets/sorpresa per la principessa.jpg" alt="Foto ricordo 4" loading="lazy">
+                </div>
+            </section>
+
+            <section class="card wishes" aria-labelledby="wishes-title">
+                <h2 id="wishes-title">Auguri, principessa</h2>
+                <p>Ti auguro un anno pieno di sogni realizzati. Ti amo.</p>
+            </section>
+        </main>
+
+        <footer class="site-footer" role="contentinfo">
+            <!-- cuore posizionato sopra il testo finale -->
+            <div class="footer-heart" aria-hidden="true">❤</div>
+            <p>Con tutto il mio amore — Jacopo</p>
+        </footer>
+
+        <!-- Lightbox: mostra SOLO la scritta (nessuna immagine ingrandita) -->
+        <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Scritta ingrandita">
+            <button class="lightbox-close" aria-label="Chiudi">✕</button>
+
+            <div class="lightbox-inner" style="max-width:760px;width:100%;display:flex;justify-content:center;align-items:center;padding:28px;box-sizing:border-box;">
+                <div class="lightbox-caption-panel" style="width:100%;color:#f14992;">
+                    <h3 style="margin:0 0 12px;text-align:center">RICORDO</h3>
+                    <div id="lightbox-caption" style="background:rgba(255,255,255,0.95);padding:18px;border-radius:12px;min-height:120px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;box-shadow:0 12px 36px rgba(75,40,55,0.08);text-align:center;white-space:pre-wrap">
+                        <!-- JS inserisce la scritta qui (solo testo) -->
+                    </div>
+                    <p style="margin-top:12px;color:#6b4b57;font-size:.9rem;text-align:center">La scritta mostrata è salvata nel tuo browser (localStorage) o è una frase predefinita.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+<!-- ...existing code... -->
